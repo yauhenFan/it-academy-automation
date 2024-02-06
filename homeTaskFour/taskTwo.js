@@ -15,7 +15,7 @@ for (let i = 0; i < num -1; ++i) {
     el = Math.floor(Math.random() * (max - min) + min);
     arr.push(el);
     sum += el;
-    if (arr.length === num-1) {
+    if (arr.length === num - 1) {
         let dif = inNum - sum;
         arr.push(dif);
     } else {(console.log('Error'));}
@@ -28,7 +28,7 @@ for (let i = 0; i < num -1; ++i) {
     el1 = (parseFloat(Math.random() * (max1 - min) + min)).toFixed(2);
     arr1.push(el1);
     sum1 += parseFloat(el1);
-    if (arr1.length === num-1) {
+    if (arr1.length === num - 1) {
         let dif1 = (inNum - sum1).toFixed(2);
             arr1.push(dif1);
     } else {(console.log('Error'));}
