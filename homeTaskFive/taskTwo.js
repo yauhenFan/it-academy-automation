@@ -1,11 +1,9 @@
 function taskTwo (strArr) {
-    let arr1 = Array.prototype.map
-    .call(strArr, (ind) => parseInt(ind))
-    .slice(0, 3)
+    let arr = strArr.split('');
+    let arr1 = arr.slice(0, arr.length/2);
     
-    let arr2 = Array.prototype.map
-    .call(strArr, (ind) => parseInt(ind))
-    .slice(3, 6);
+    let arr2 = arr.slice(arr.length/2);
+    console.log(arr2);
 
     let sum1 = arr1.reduce((sum, current) => sum + current);
     let sum2 = arr2.reduce((sum, current) => sum + current);
