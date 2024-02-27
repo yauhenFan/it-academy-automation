@@ -18,7 +18,7 @@ export function map<I, O>(mapper?: (i: I) => O, input?: I[]): Array<any> | Funct
         return map;
     }
     if (arguments.length === 1) {
-        return function subFunction(subInput: I[]) {
+        return function subFunction(subInput?: I[]): ((subInput?: I[]) => any | O[]) | O[] {
             if (arguments.length === 0) {
                 return subFunction;
             }
@@ -50,7 +50,7 @@ export function filter<I , O>(filterer?: (i: I) => O, input?: I[]): Array<any> |
         return filter;
     }
     if (arguments.length === 1) {
-        return function subFunction(subInput?: I[]) {
+        return function subFunction(subInput?: I[]): I[] | ((subInput?: I[]) => I[] | any) {
             if (arguments.length === 0) {
                 return subFunction;
             }
@@ -78,7 +78,7 @@ export function add(a?: number, b?: number): Number | Function {
         return add;
     }
     if (arguments.length === 1) {
-        return function subFunction(subB?: number) {
+        return function subFunction(subB?: number): number | ((subB?: number) => number | any) {
             if (arguments.length === 0) {
                 return subFunction;
             }
