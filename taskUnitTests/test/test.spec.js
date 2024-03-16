@@ -34,7 +34,6 @@ describe('Perform positive checks for multiply method', function() {
     [[3, 4], [3, 4, 0], [2, -2, 4], [3, 2, 3.4], [3.5, 2.5]].forEach((i) => {
         it('Multiply numbers and fractions', async() => {
             let multiplyResult = calculator.multiply(...i);
-            console.log(multiplyResult);
             expect(multiplyResult).equals(i.reduce((a, b) => a * b))
         });
     });
