@@ -2,10 +2,12 @@ name: Run pipeline
 
 on:
   push:
-    branches: [ "task12" ]
+    branches: 
+        - 'main'
   pull_request:
-    branches: [ "task12" ]
-
+    branches: 
+        - 'main'
+    
 
 jobs:
     test:
