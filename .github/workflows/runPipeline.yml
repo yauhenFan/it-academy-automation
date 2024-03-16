@@ -2,9 +2,10 @@ name: Run pipeline
 
 on:
   push:
-    branches: [ "main" ]
+    branches: [ "task12" ]
   pull_request:
-    branches: [ "main" ]
+    branches: [ "task12" ]
+
 
 jobs:
     test:
@@ -18,7 +19,7 @@ jobs:
               with:
                 node-version: 20.10.0
             - name: Folder
-              run: cd taskUnitTest
+              run: cd ./taskUnitTest
             - name: Dependencies
               working-directory: ./taskUnitTest
               run: npm i
