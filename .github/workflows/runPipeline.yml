@@ -11,17 +11,17 @@ jobs:
         runs-on: windows-latest
 
         steps:
-            - name: Checkout task12
+            - name: Checkout
               uses: actions/checkout@v4
             - name: Install Node
               uses: actions/setup-node@v4
               with:
                 node-version: 20.10.0
             - name: Folder
-              run: cd ./taskUnitTest
+              run: cd ./taskUnitTests
             - name: Dependencies
-              working-directory: ./taskUnitTest
+              working-directory: ./taskUnitTests
               run: npm i
             - name: Run tests
-              working-directory: ./taskUnitTest
+              working-directory: ./taskUnitTests
               run: npm test
