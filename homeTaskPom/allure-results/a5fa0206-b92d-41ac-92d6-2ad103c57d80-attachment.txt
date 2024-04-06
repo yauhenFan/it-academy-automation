@@ -1,4 +1,0 @@
-{
-  "using": "css selector",
-  "value": "div.navbarSearchContainer_Bca1 svg.DocSearch-Search-Icon"
-}

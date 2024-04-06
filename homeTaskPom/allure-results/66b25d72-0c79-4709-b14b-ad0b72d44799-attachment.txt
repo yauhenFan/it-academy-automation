@@ -1,5 +1,0 @@
-{
-  "error": "no such element",
-  "message": "no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"div.DocSearch-Modal input.DocSearch-Input\"}\n  (Session info: chrome=123.0.6312.88)",
-  "stacktrace": "\tGetHandleVerifier [0x00007FF715FC7072+63090]\n\t(No symbol) [0x00007FF715F32CC2]\n\t(No symbol) [0x00007FF715DCEC65]\n\t(No symbol) [0x00007FF715E1499D]\n\t(No symbol) [0x00007FF715E14ADC]\n\t(No symbol) [0x00007FF715E55B37]\n\t(No symbol) [0x00007FF715E3701F]\n\t(No symbol) [0x00007FF715E53412]\n\t(No symbol) [0x00007FF715E36D83]\n\t(No symbol) [0x00007FF715E083A8]\n\t(No symbol) [0x00007FF715E09441]\n\tGetHandleVerifier [0x00007FF7163C25CD+4238285]\n\tGetHandleVerifier [0x00007FF7163FF72D+4488493]\n\tGetHandleVerifier [0x00007FF7163F7A0F+4456463]\n\tGetHandleVerifier [0x00007FF7160A05B6+953270]\n\t(No symbol) [0x00007FF715F3E58F]\n\t(No symbol) [0x00007FF715F39264]\n\t(No symbol) [0x00007FF715F3939B]\n\t(No symbol) [0x00007FF715F29BD4]\n\tBaseThreadInitThunk [0x00007FF958577344+20]\n\tRtlUserThreadStart [0x00007FF9593026B1+33]\n"
-}

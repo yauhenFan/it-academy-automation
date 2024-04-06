@@ -1,4 +1,0 @@
-{
-  "using": "css selector",
-  "value": "button.clean-btn.close.closeButton_CVFx.announcementBarClose_gvF7"
-}
