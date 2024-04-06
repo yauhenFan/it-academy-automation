@@ -1,0 +1,4 @@
+{
+  "using": "css selector",
+  "value": "nav.navbar.navbar--fixed-top div.navbar__inner"
+}
