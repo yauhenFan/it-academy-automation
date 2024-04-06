@@ -1,0 +1,4 @@
+node_modules
+.tmp
+__snapshots__
+allure-results
