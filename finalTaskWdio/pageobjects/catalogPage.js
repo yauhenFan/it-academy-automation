@@ -59,6 +59,11 @@ class CatalogPage extends Base {
         return $$('div.tovars div.wrap_tov_compr strong');
     }
 
+    async selectProducer(nameProducer) {
+        await (await this.getProducerName(nameProducer)).waitForDisplayed();
+        await (await this.getProducerName(nameProducer)).click();
+    }
+
     async sortCategory(categoryNum) {
         return $(`div.sorted_podcategory ul.sorted_podcategory_item li:nth-child(${categoryNum}) a`);
     }
