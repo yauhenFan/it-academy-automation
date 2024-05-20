@@ -14,6 +14,7 @@ describe('Add goods to compare and remove', () => {
 
     it('Goods can be added for comparison', async() => {
         await mainPage.searchAndHitEnter('ноутбуки');
+        await mainPage.acceptCookieIfDisplays();
         await calalogPage.addProductToComparison(1);
         await calalogPage.addProductToComparison(2);
         await mainHelper.verifyIsDisplayed(calalogPage.compareToast);

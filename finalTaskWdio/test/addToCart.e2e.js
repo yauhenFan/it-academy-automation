@@ -17,6 +17,8 @@ describe('Add item to card and verify result', () => {
         await mainPage.searchAndHitEnter('телевизоры');
         await mainHelper.verifyIsDisplayed(calalogPage.catalogTitle);
         await mainHelper.verifyIsDisplayed(catalogPage.getTotalResultCategorySearch('Телевизоры'));
+        await mainPage.closeDiscountSpinnerIfAppears();
+        await mainPage.acceptCookieIfDisplays();
         await calalogPage.addItemtoCart(1);
         await mainHelper.verifyIsDisplayed(mainPage.cartWindow);
         await expect(cartWindow.oneItemInCart).toHaveText('1 товар')
@@ -45,7 +47,7 @@ describe('Add item to card and verify result', () => {
         await mainPage.searchAndHitEnter('телевизоры');
         await mainHelper.verifyIsDisplayed(catalogPage.catalogTitle);
         await mainHelper.verifyIsDisplayed(catalogPage.getTotalResultCategorySearch('Телевизоры'));
-        await mainPage.closeDiscountSpinnerIfAppears();
+        await calalogPage.addItemtoCart(1);
         await mainHelper.verifyIsDisplayed(mainPage.cartWindow);
         await mainHelper.clickOnElement(cartWindow.proccedOrderingBtn);
         await expect(mainPage.cartWindow).not.toBeDisplayed();

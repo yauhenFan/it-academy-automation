@@ -10,12 +10,12 @@ describe('Sort by categories and parameters', () => {
         await mainPage.open(DATA.BASE_URL);
         await mainHelper.verifyIsDisplayed(mainPage.allGoodsButton);
         await mainPage.maximize();
-        await mainPage.closeDiscountSpinnerIfAppears();
-        await mainPage.acceptCookieIfDisplays();
     })
 
     it('Items should be sorted by selected candition', async() => {
         await mainPage.searchAndHitEnter('телевизоры');
+        await mainPage.closeDiscountSpinnerIfAppears();
+        await mainPage.acceptCookieIfDisplays();
         await mainHelper.verifyIsDisplayed(catalogPage.catalogTitle);
         await mainHelper.verifyIsDisplayed(catalogPage.getTotalResultCategorySearch('Телевизоры'));
         await expect(await catalogPage.selectCategoryAndVerifySorting(2, calalogPage.labelMadeIn)).toContain('Сделано в Беларуси');

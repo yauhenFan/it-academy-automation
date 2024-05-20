@@ -15,6 +15,7 @@ describe('Result should display when using search input', () => {
     it('Search by category name using input field and hit Enter', async() => {
         await mainPage.searchAndHitEnter('телевизоры');
         await mainHelper.verifyIsDisplayed(calalogPage.catalogTitle);
+        await mainPage.acceptCookieIfDisplays();
         expect(await calalogPage.getTotalResultCategorySearch('Телевизоры')).toBeDisplayed();
         expect(await calalogPage.getCatalogTitleCategorySearch('Телевизоры')).toBeDisplayed();
     })
